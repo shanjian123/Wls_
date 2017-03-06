@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.test.TetrisView
+        android:id="@+id/tetris"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tileSize="24" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/info"
+            android:text="@string/mode_ready"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:textColor="#ff8888ff"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/current_score"
+            android:text="当前分数：\n 0"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+
+            android:layout_alignParentRight="true"
+            android:textColor="#ff8888ff"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/highest_score"
+            android:text="最高分数：\n 0"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/current_score"
+            android:layout_alignParentRight="true"
+            android:textColor="#ff8888ff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/current_level"
+            android:text="当前级别：\n 1"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/current_score"
+            android:layout_alignParentRight="true"
+            android:textColor="#ff8888ff"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+</FrameLayout>

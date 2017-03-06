@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string
+        name="app_name">Tetris</string>
+    <string
+        name="mode_ready">\n按上开始游戏  </string>
+    <string
+        name="mode_pause">  暂停\n按上继续游戏   </string>
+    <string
+        name="mode_lose_prefix">Game Over\nScore: </string>
+    <string
+        name="mode_lose_suffix">\n按上重新开始游戏   </string>
+</resources>
